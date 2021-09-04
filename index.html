@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto2-Formulario2</title>
+    <style>
+.caja1{
+    
+    display: flex;
+    flex-direction: column;
+
+
+}
+.caja1 input{
+    outline: none;
+    
+}
+
+fieldset{
+ width: 350px;
+ margin: auto;
+ background: rgb(216, 226, 241);
+ border: 0;
+padding: 50px;
+}
+header{
+    text-align: center;
+    background: rgb(165, 143, 147);
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+body{
+    background: rgb(87, 109, 87);
+}
+/*option */
+.caja1 input{
+    padding: 5px;
+}
+button{
+    width: 80px;
+    padding: 3px;
+    font-weight: bold;
+    color: wheat;
+    background: rgb(53, 134, 201);
+}
+textarea{
+    outline: none;
+    resize: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO 2</h1>
+    </header>
+    <main>
+        <form action="">
+            <fieldset class="caja">
+                <div class="caja1">  
+                <h2>Sign Up</h2>
+                <label for="">First name</label>
+                <br>
+                <input type="text" minlength="6">
+                <br>
+                <hr>
+                <label for="">Age</label>
+                <br>
+                
+                <input type="number" min="0" max="120">
+                <br>
+                <hr>
+                <label for="">Income</label>
+                <br>
+                <input type="text" minlength="6">
+                <br>
+                <hr>
+                <label for="">More Info</label>
+                <br>
+                <textarea name="" id="" cols="10" rows="2"></textarea>
+            </div>
+            <div class="option">
+                <br>
+                <label for="genero">Gender</label>
+                <br>
+                
+                <input type="radio" name="genero" value="Male">Male
+                <input type="radio" name="genero" value="Female">Female
+                <input type="radio" name="genero" value="Trans">Trans
+                <br>
+                <br>
+            </div>
+            <div class="option2">
+                <label for="">Plan</label>
+                <br>
+                <select  style="width: 200px;" >
+                    <option selected disabled >Select Plan</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" name="" id="">Subcribe to Newsletter
+            </div>
+            <br>
+          <button>Update</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
